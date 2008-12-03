@@ -1,0 +1,9 @@
+#summary Subscribing to API Documentation in Xcode
+
+It is possible to automatically subscribe to the Plausible Database API documentation directly in Xcode. To do so:
+
+  # Launch Xcode.
+  # Choose Help > Documentation.
+  # From the Action menu in the lower left hand corner (the one with the Gear Icon), select "New Subscription..."
+  # Paste the Plausible Database Xcode Documentation Feed URL into the New Doc Subscription dialog
+  # The documentation should appear in the Doc Sets pane. If it does not, try restarting Xcode.
