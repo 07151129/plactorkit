@@ -5,7 +5,7 @@ PROJECT_NAME="plactorkit"
 
 PUBLIC_SVN_URL="http://plactorkit.googlecode.com/svn/"
 
-DOCSET_ID="com.plausiblelabs.PLActorKit"
+DOCSET_ID="com.plausiblelabs.ActorKit"
 DOCSET_BUNDLE_NAME="Plausible ActorKit"
 
 # Parse script arguments
