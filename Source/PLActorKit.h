@@ -35,6 +35,9 @@
 
 + (id<PLActorProcess>) spawnWithTarget: (id) target selector: (SEL) selector;
 
++ (id<PLActorProcess>) spawnWithTarget: (id) target selector: (SEL) selector object: (id) object;
+
+
 + (id) receive;
 + (BOOL) receive: (id *) message withTimeout: (PLActorTimeInterval) timeout;
 

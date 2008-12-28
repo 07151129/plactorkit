@@ -91,7 +91,8 @@ static void thread_process_destructor (void *value) {
 }
 
 /**
- * Spawn a new actor process
+ * Spawn a new actor process.
+ *
  * @param target The object to which the message specified by selector is sent.
  * @param selector The message to send to target. This selector must accept no arguments.
  */
@@ -103,6 +104,23 @@ static void thread_process_destructor (void *value) {
 
     return proc;
 }
+
+/**
+ * Spawn a new actor process with the provided method argument.
+ *
+ * @param target The object to which the message specified by selector is sent.
+ * @param selector The message to send to target. This selector must accept exactly one argument.
+ * @param object The object to pass as an argument.
+ */
++ (id<PLActorProcess>) spawnWithTarget: (id) target selector: (SEL) selector object: (id) object {
+    PLThreadedActorProcess *proc;
+    
+    proc = [[[PLThreadedActorProcess alloc] initWithTarget: target selector: selector object: object] autorelease];
+    [proc run];
+    
+    return proc;
+}
+
 
 
 /**

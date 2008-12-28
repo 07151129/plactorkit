@@ -32,9 +32,13 @@
     
     /** Target selector. */
     SEL _target_sel;
+    
+    /** Target argument. */
+    id _target_arg;
 }
 
 - (id) initWithTarget: (id) target selector: (SEL) selector;
+- (id) initWithTarget: (id) target selector: (SEL) selector object: (id) object;
 - (void) run;
 
 @end

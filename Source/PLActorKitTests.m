@@ -54,6 +54,28 @@
     STAssertEquals([[PLActorKit receive] object], @"Hello", @"Message was not returned");
 }
 
+/* Simple echo actor */
+- (void) threadedEchoWithArg: (id) arg {
+    PLActorMessage *msg = [PLActorKit receive];
+    
+    NSString* argString = arg;
+    NSString* msgString = [msg object];
+    NSString* respString = [msgString stringByAppendingString: argString];
+    PLActorMessage *resp = [PLActorMessage messageWithObject: respString];
+    
+    [[msg sender] send: resp];
+}
+
+- (void) testSpawnWithArg {
+    id<PLActorProcess> proc = [PLActorKit spawnWithTarget: self selector: @selector(threadedEchoWithArg:) object: @"-Suffix"];
+    
+    /* Send a message */
+    [proc send: [PLActorMessage messageWithObject: @"Hello"]];
+    
+    /* Wait for it to come back to us */
+    STAssertEqualObjects([[PLActorKit receive] object], @"Hello-Suffix", @"Message was not returned");
+}
+
 @end
 
 
