@@ -53,4 +53,23 @@
     [proc release];
 }
 
+/* Simple echo actor */
+- (void) echoWithArg: (id) arg {
+    id<PLActorProcess> process = arg;
+    [process send: @"Hello"];
+}
+
+- (void) testInitWithObject {
+    PLThreadedActorProcess *proc = [[PLThreadedActorProcess alloc] initWithTarget: self selector: @selector(echoWithArg:) object: [PLActorKit process]];
+
+    /* Try running it */
+    [proc run];
+
+    /* Wait for a message to come back to us */
+    STAssertEqualObjects([PLActorKit receive], @"Hello", @"Message was not sent");
+
+    /* And release it */
+    [proc release];
+}
+
 @end

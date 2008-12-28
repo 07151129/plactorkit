@@ -38,18 +38,27 @@
  * Initialize the actor.
  */
 - (id) initWithTarget: (id) target selector: (SEL) selector {
+    return [self initWithTarget:target selector:selector object: nil];
+}
+
+/**
+ * Initialize the actor.
+ */
+- (id) initWithTarget: (id) target selector: (SEL) selector object: (id) object {
     if ((self = [super init]) == nil)
         return nil;
 
     /* Save the target reference */
     _target_obj = [target retain];
     _target_sel = selector;
+    _target_arg = [object retain];
 
     return self;
 }
 
 - (void) dealloc {
     [_target_obj release];
+    [_target_arg release];
 
     [super dealloc];
 }
@@ -64,7 +73,7 @@ static void *run_actor (void *arg) {
     
     /* Start the user's code */
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    objc_msgSend(proc->_target_obj, proc->_target_sel);
+    objc_msgSend(proc->_target_obj, proc->_target_sel, proc->_target_arg);
     [pool release];
     
     /* We retained ourself when spawning this thread.
