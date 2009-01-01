@@ -105,7 +105,7 @@
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
     Method *methods;
-    unsigned int methodCount;
+    unsigned int methodCount = 0;
 
     /* Inform the result handler of initialization */
     [_resultHandler willExecuteInstrumentationSuite: instrumentCase];
