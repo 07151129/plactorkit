@@ -27,14 +27,24 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ActorKit.h"
+#import "PLInstrumentTime.h"
 
-#import <PLInstrument/PLInstrument.h>
+@interface PLInstrumentResult : NSObject {
+@private
+    /** The total time consumed to perform all iterations. */
+    PLITimeInterval _totalTime;
 
-@interface PLActorQueueInstruments : NSObject {
-
+    /** The number of iterations performed during _totalTime */
+    unsigned long _iterations;
 }
 
-- (PLInstrumentResult *) runWithQueue: (id<PLActorQueue>) queue threadCount: (unsigned long) threadCount;
++ (id) resultWithRunTime: (PLITimeInterval) runTime iterations: (unsigned long) iterations;
++ (id) resultWithStartTime: (PLIAbsoluteTime) startTime endTime: (PLIAbsoluteTime) endTime iterations: (unsigned long) iterations;
+
+- (id) initWithRunTime: (PLITimeInterval) runTime iterations: (unsigned long) iterations;
+- (id) initWithStartTime: (PLIAbsoluteTime) startTime endTime: (PLIAbsoluteTime) endTime iterations: (unsigned long) iterations;
+
+- (double) iterationsPerInterval: (PLITimeInterval) timeInterval;
+- (PLITimeInterval) intervalPerIteration;
 
 @end

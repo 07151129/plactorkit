@@ -27,7 +27,7 @@
 
 #import "ActorKit.h"
 
-#import "PLInstrument.h"
+#import <PLInstrument/PLInstrument.h>
 #import "PLActorQueueInstruments.h"
 
 @interface PLActorSimpleQueueInstrumentation : PLInstrumentCase {

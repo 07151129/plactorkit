@@ -27,14 +27,20 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ActorKit.h"
+#import "PLInstrumentCase.h"
+#import "PLInstrumentResultHandler.h"
 
-#import <PLInstrument/PLInstrument.h>
-
-@interface PLActorQueueInstruments : NSObject {
-
+/**
+ * Implements execution of "instrument" methods in a PLInstrumentCase.
+ */
+@interface PLInstrumentRunner : NSObject {
+@private
+    id<PLInstrumentResultHandler> _resultHandler;
 }
 
-- (PLInstrumentResult *) runWithQueue: (id<PLActorQueue>) queue threadCount: (unsigned long) threadCount;
+- (id) initWithResultHandler: (id<PLInstrumentResultHandler>) resultHandler;
+
+- (void) runAllCases;
+- (void) runCase: (PLInstrumentCase *) instrumentCase;
 
 @end

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+  <TOC>
+    <Node>
+      <Name>Root</Name>
+      <Path>index.html</Path>
+      <Subnodes>
+       <Node>
+        <Name>Plausible Instrument</Name>
+        <Path>index.html</Path>
+       </Node>
+       <Node>
+        <Name>Modules</Name>
+        <Path>modules.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>Functions Reference</Name>
+          <Path>group__functions.html</Path>
+          <Subnodes>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Constants Reference</Name>
+          <Path>group__constants.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Types Reference</Name>
+            <Path>group__types.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Enumerations</Name>
+            <Path>group__enums.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Global Variables</Name>
+            <Path>group__globals.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Exceptions</Name>
+            <Path>group__exceptions.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Class List</Name>
+        <Path>annotated.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>PLInstrumentCase</Name>
+          <Path>interface_p_l_instrument_case.html</Path>
+         </Node>
+         <Node>
+          <Name>PLInstrumentConsoleResultHandler</Name>
+          <Path>interface_p_l_instrument_console_result_handler.html</Path>
+         </Node>
+         <Node>
+          <Name>PLInstrumentResult</Name>
+          <Path>interface_p_l_instrument_result.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; PLInstrumentResultHandler &gt;</Name>
+          <Path>protocol_p_l_instrument_result_handler-p.html</Path>
+         </Node>
+         <Node>
+          <Name>PLInstrumentRunner</Name>
+          <Path>interface_p_l_instrument_runner.html</Path>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Class Hierarchy</Name>
+        <Path>hierarchy.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>PLInstrumentCase</Name>
+          <Path>interface_p_l_instrument_case.html</Path>
+         </Node>
+         <Node>
+          <Name>PLInstrumentResult</Name>
+          <Path>interface_p_l_instrument_result.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; PLInstrumentResultHandler &gt;</Name>
+          <Path>protocol_p_l_instrument_result_handler-p.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>PLInstrumentConsoleResultHandler</Name>
+            <Path>interface_p_l_instrument_console_result_handler.html</Path>
+           </Node>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>PLInstrumentRunner</Name>
+          <Path>interface_p_l_instrument_runner.html</Path>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Class Members</Name>
+        <Path>functions.html</Path>
+       </Node>
+       <Node>
+        <Name>Graphical Class Hierarchy</Name>
+        <Path>inherits.html</Path>
+       </Node>
+       <Node>
+        <Name>File List</Name>
+        <Path>files.html</Path>
+        <Subnodes>
+        </Subnodes>
+       </Node>
+      </Subnodes>
+    </Node>
+  </TOC>
+</DocSetNodes>
