@@ -27,14 +27,34 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ActorKit.h"
+#import <stdint.h>
 
-#import <PLInstrument/PLInstrument.h>
+#import <mach/mach.h>
+#import <mach/mach_time.h>
 
-@interface PLActorQueueInstruments : NSObject {
+/** An opaque implementation-defined time measurement. This measurement may not remain valid across invocations
+ * and must not be stored. */
+typedef uint64_t PLIAbsoluteTime;
 
+/** A time interval, in nanoseconds. */
+typedef uint64_t PLITimeInterval;
+
+/**
+ * Convert seconds to nanosecond time interval.
+ */
+#define PLISecondsToTimeInterval(seconds) ((PLITimeInterval) (UINT64_C(seconds) * UINT64_C(1000000000)))
+
+/**
+ * Convert nanosecond time interval to microseconds, returning a floating point (double) value.
+ */
+#define PLITimeIntervalToMicroseconds(interval) ((double) interval / 1000.0)
+
+/**
+ * Return the current time as an opaque absolute
+ * time value.
+ */
+static inline PLIAbsoluteTime PLICurrentTime () {
+    return mach_absolute_time();
 }
 
-- (PLInstrumentResult *) runWithQueue: (id<PLActorQueue>) queue threadCount: (unsigned long) threadCount;
-
-@end
+PLITimeInterval PLIComputeTimeInterval (PLIAbsoluteTime startTime, PLIAbsoluteTime endTime);

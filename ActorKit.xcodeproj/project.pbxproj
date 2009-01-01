@@ -24,6 +24,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0500A6350F0C687B0067DC6C /* PLInstrument.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0500A62A0F0C68710067DC6C /* PLInstrument.framework */; };
+		0500A6430F0C689F0067DC6C /* PLInstrument.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0500A62A0F0C68710067DC6C /* PLInstrument.framework */; };
 		05065BAF0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BAE0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m */; };
 		05102EFF0E986DF100CF6E6E /* PLActorRPCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05102EFE0E986DF100CF6E6E /* PLActorRPCTests.m */; };
 		0520FCE30EA003B6000B1751 /* PLActorRPCProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0520FCE00EA003B6000B1751 /* PLActorRPCProxyTests.m */; };
@@ -38,11 +40,6 @@
 		052C2E4F0EE6128B0023E46D /* PLActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F350EA02A1800CEF58C /* PLActorMessage.m */; };
 		052C2E500EE6128B0023E46D /* PLRunloopRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */; };
 		052C2E510EE6128B0023E46D /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
-		052C2E520EE6128B0023E46D /* PLInstrumentCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 057708E90ECA73D400103B8A /* PLInstrumentCase.m */; };
-		052C2E530EE6128B0023E46D /* PLInstrumentRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 057708EB0ECA73D400103B8A /* PLInstrumentRunner.m */; };
-		052C2E540EE6128B0023E46D /* PLInstrumentResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709610ECB933700103B8A /* PLInstrumentResult.m */; };
-		052C2E550EE6128B0023E46D /* PLInstrumentTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709880ECDFF0900103B8A /* PLInstrumentTime.m */; };
-		052C2E560EE6128B0023E46D /* PLInstrumentConsoleResultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05770A780ECE13A400103B8A /* PLInstrumentConsoleResultHandler.m */; };
 		052C2E570EE6128B0023E46D /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
 		052C2EFF0EE6140C0023E46D /* PLActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 05411B120E47B3AA009E3C18 /* PLActorKit.m */; };
 		052C2F000EE6140C0023E46D /* PLActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F350EA02A1800CEF58C /* PLActorMessage.m */; };
@@ -50,11 +47,6 @@
 		052C2F020EE6140C0023E46D /* PLActorRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */; };
 		052C2F030EE6140C0023E46D /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
 		052C2F040EE6140C0023E46D /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
-		052C2F050EE6140C0023E46D /* PLInstrumentCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 057708E90ECA73D400103B8A /* PLInstrumentCase.m */; };
-		052C2F060EE6140C0023E46D /* PLInstrumentConsoleResultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05770A780ECE13A400103B8A /* PLInstrumentConsoleResultHandler.m */; };
-		052C2F070EE6140C0023E46D /* PLInstrumentResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709610ECB933700103B8A /* PLInstrumentResult.m */; };
-		052C2F080EE6140C0023E46D /* PLInstrumentRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 057708EB0ECA73D400103B8A /* PLInstrumentRunner.m */; };
-		052C2F090EE6140C0023E46D /* PLInstrumentTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709880ECDFF0900103B8A /* PLInstrumentTime.m */; };
 		052C2F0A0EE6140C0023E46D /* PLRunloopRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */; };
 		052C2F0B0EE6140C0023E46D /* PLSimpleActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56780E522061008638FF /* PLSimpleActorProcess.m */; };
 		052C2F0C0EE6140C0023E46D /* PLThreadedActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56550E5210A8008638FF /* PLThreadedActorProcess.m */; };
@@ -93,20 +85,12 @@
 		05389E8C0EE6113300F8AA6F /* PLActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F350EA02A1800CEF58C /* PLActorMessage.m */; };
 		05389E8D0EE6113300F8AA6F /* PLRunloopRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */; };
 		05389E8E0EE6113300F8AA6F /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
-		05389E8F0EE6113300F8AA6F /* PLInstrumentCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 057708E90ECA73D400103B8A /* PLInstrumentCase.m */; };
-		05389E900EE6113300F8AA6F /* PLInstrumentRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 057708EB0ECA73D400103B8A /* PLInstrumentRunner.m */; };
-		05389E910EE6113300F8AA6F /* PLInstrumentResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709610ECB933700103B8A /* PLInstrumentResult.m */; };
-		05389E920EE6113300F8AA6F /* PLInstrumentTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709880ECDFF0900103B8A /* PLInstrumentTime.m */; };
-		05389E930EE6113300F8AA6F /* PLInstrumentConsoleResultHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05770A780ECE13A400103B8A /* PLInstrumentConsoleResultHandler.m */; };
 		05389E940EE6113300F8AA6F /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
 		05411B0E0E47B385009E3C18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05411B0C0E47B385009E3C18 /* Foundation.framework */; };
 		056E46170E492ACD00F3319F /* PLActorKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E46160E492ACD00F3319F /* PLActorKitTests.m */; };
 		0577070E0ECA4E7400103B8A /* PLActorSimpleQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577070D0ECA4E7400103B8A /* PLActorSimpleQueueTests.m */; };
 		057708070ECA57D100103B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 057707E30ECA568A00103B8A /* main.m */; };
 		0577080C0ECA57E200103B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 057707E30ECA568A00103B8A /* main.m */; };
-		057709580ECA825200103B8A /* PLInstrumentRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709570ECA825200103B8A /* PLInstrumentRunnerTests.m */; };
-		0577098C0ECE022C00103B8A /* PLInstrumentTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577098B0ECE022C00103B8A /* PLInstrumentTimeTests.m */; };
-		057709F90ECE0AC000103B8A /* PLInstrumentResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 057709F80ECE0AC000103B8A /* PLInstrumentResultTests.m */; };
 		0587F9B30ECEB9390066A0BC /* PLActorQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9B20ECEB9390066A0BC /* PLActorQueueTests.m */; };
 		0587FC2E0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587FC2D0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m */; };
 /* End PBXBuildFile section */
@@ -210,6 +194,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0500A62A0F0C68710067DC6C /* PLInstrument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLInstrument.framework; path = "Components/PLInstrument-20081231-snap/PLInstrument-iPhone/PLInstrument.framework"; sourceTree = "<group>"; };
+		0500A6360F0C68870067DC6C /* PLInstrument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLInstrument.framework; path = "Components/PLInstrument-20081231-snap/PLInstrument-MacOSX/PLInstrument.framework"; sourceTree = "<group>"; };
 		05065BA60EB711F500DAFB9D /* PLRunloopRPCProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRunloopRPCProxy.h; sourceTree = "<group>"; };
 		05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRunloopRPCProxy.m; sourceTree = "<group>"; };
 		05065BAE0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRunloopRPCProxyTests.m; sourceTree = "<group>"; };
@@ -251,21 +237,6 @@
 		057707CF0ECA562500103B8A /* Profiler-MacOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profiler-MacOSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		057707D10ECA562500103B8A /* Profiler-MacOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Profiler-MacOSX-Info.plist"; sourceTree = "<group>"; };
 		057707E30ECA568A00103B8A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		057708E70ECA73D400103B8A /* PLInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrument.h; sourceTree = "<group>"; };
-		057708E80ECA73D400103B8A /* PLInstrumentCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentCase.h; sourceTree = "<group>"; };
-		057708E90ECA73D400103B8A /* PLInstrumentCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentCase.m; sourceTree = "<group>"; };
-		057708EA0ECA73D400103B8A /* PLInstrumentRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentRunner.h; sourceTree = "<group>"; };
-		057708EB0ECA73D400103B8A /* PLInstrumentRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentRunner.m; sourceTree = "<group>"; };
-		057709570ECA825200103B8A /* PLInstrumentRunnerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentRunnerTests.m; sourceTree = "<group>"; };
-		0577095F0ECB930F00103B8A /* PLInstrumentResultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentResultHandler.h; sourceTree = "<group>"; };
-		057709600ECB933700103B8A /* PLInstrumentResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentResult.h; sourceTree = "<group>"; };
-		057709610ECB933700103B8A /* PLInstrumentResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentResult.m; sourceTree = "<group>"; };
-		057709870ECDFF0900103B8A /* PLInstrumentTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentTime.h; sourceTree = "<group>"; };
-		057709880ECDFF0900103B8A /* PLInstrumentTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentTime.m; sourceTree = "<group>"; };
-		0577098B0ECE022C00103B8A /* PLInstrumentTimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentTimeTests.m; sourceTree = "<group>"; };
-		057709F80ECE0AC000103B8A /* PLInstrumentResultTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentResultTests.m; sourceTree = "<group>"; };
-		05770A770ECE13A400103B8A /* PLInstrumentConsoleResultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentConsoleResultHandler.h; sourceTree = "<group>"; };
-		05770A780ECE13A400103B8A /* PLInstrumentConsoleResultHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLInstrumentConsoleResultHandler.m; sourceTree = "<group>"; };
 		05770AD30ECE195600103B8A /* PLActorSimpleQueueInstrumentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorSimpleQueueInstrumentation.m; sourceTree = "<group>"; };
 		0587F7780ECE82AC0066A0BC /* PLActorQueueInstruments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorQueueInstruments.h; sourceTree = "<group>"; };
 		0587F7790ECE82AC0066A0BC /* PLActorQueueInstruments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorQueueInstruments.m; sourceTree = "<group>"; };
@@ -276,7 +247,6 @@
 		0587FC2D0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorWriteLockQueueTests.m; sourceTree = "<group>"; };
 		0587FC320ECFBC010066A0BC /* PLActorWriteLockQueueInstrumentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorWriteLockQueueInstrumentation.m; sourceTree = "<group>"; };
 		05D410BB0EDA29250076F0CE /* PLActorObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorObjC.h; sourceTree = "<group>"; };
-		05D410F40EDA2F850076F0CE /* PLInstrumentObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLInstrumentObjC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +284,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0500A6350F0C687B0067DC6C /* PLInstrument.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0500A6430F0C689F0067DC6C /* PLInstrument.framework in Frameworks */,
 				052C30260EE61D910023E46D /* ActorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +300,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0500A6390F0C688F0067DC6C /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				0500A6360F0C68870067DC6C /* PLInstrument.framework */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		0500A6420F0C68960067DC6C /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0500A62A0F0C68710067DC6C /* PLInstrument.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
 		05065BD70EB7210100DAFB9D /* Runloop */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +362,8 @@
 		05411B0B0E47B361009E3C18 /* Linked Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				0500A6420F0C68960067DC6C /* Mac */,
+				0500A6390F0C688F0067DC6C /* iPhone */,
 				05411B0C0E47B385009E3C18 /* Foundation.framework */,
 			);
 			name = "Linked Libraries";
@@ -435,32 +425,8 @@
 		057708DD0ECA738000103B8A /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				057708DF0ECA739400103B8A /* Instrument */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		057708DF0ECA739400103B8A /* Instrument */ = {
-			isa = PBXGroup;
-			children = (
-				057708E70ECA73D400103B8A /* PLInstrument.h */,
-				05D410F40EDA2F850076F0CE /* PLInstrumentObjC.h */,
-				057709870ECDFF0900103B8A /* PLInstrumentTime.h */,
-				057709880ECDFF0900103B8A /* PLInstrumentTime.m */,
-				0577098B0ECE022C00103B8A /* PLInstrumentTimeTests.m */,
-				057708E80ECA73D400103B8A /* PLInstrumentCase.h */,
-				057708E90ECA73D400103B8A /* PLInstrumentCase.m */,
-				057708EA0ECA73D400103B8A /* PLInstrumentRunner.h */,
-				057708EB0ECA73D400103B8A /* PLInstrumentRunner.m */,
-				057709570ECA825200103B8A /* PLInstrumentRunnerTests.m */,
-				057709600ECB933700103B8A /* PLInstrumentResult.h */,
-				057709610ECB933700103B8A /* PLInstrumentResult.m */,
-				057709F80ECE0AC000103B8A /* PLInstrumentResultTests.m */,
-				0577095F0ECB930F00103B8A /* PLInstrumentResultHandler.h */,
-				05770A770ECE13A400103B8A /* PLInstrumentConsoleResultHandler.h */,
-				05770A780ECE13A400103B8A /* PLInstrumentConsoleResultHandler.m */,
-			);
-			path = Instrument;
 			sourceTree = "<group>";
 		};
 		0587F9BD0ECEBB8C0066A0BC /* Simple Queue */ = {
@@ -797,11 +763,6 @@
 				052C2E4F0EE6128B0023E46D /* PLActorMessage.m in Sources */,
 				052C2E500EE6128B0023E46D /* PLRunloopRPCProxy.m in Sources */,
 				052C2E510EE6128B0023E46D /* PLActorSimpleQueue.m in Sources */,
-				052C2E520EE6128B0023E46D /* PLInstrumentCase.m in Sources */,
-				052C2E530EE6128B0023E46D /* PLInstrumentRunner.m in Sources */,
-				052C2E540EE6128B0023E46D /* PLInstrumentResult.m in Sources */,
-				052C2E550EE6128B0023E46D /* PLInstrumentTime.m in Sources */,
-				052C2E560EE6128B0023E46D /* PLInstrumentConsoleResultHandler.m in Sources */,
 				052C2E570EE6128B0023E46D /* PLActorWriteLockQueue.m in Sources */,
 				052C31520EE621EA0023E46D /* ActorKit.m in Sources */,
 			);
@@ -817,11 +778,6 @@
 				052C2F020EE6140C0023E46D /* PLActorRPCProxy.m in Sources */,
 				052C2F030EE6140C0023E46D /* PLActorSimpleQueue.m in Sources */,
 				052C2F040EE6140C0023E46D /* PLActorWriteLockQueue.m in Sources */,
-				052C2F050EE6140C0023E46D /* PLInstrumentCase.m in Sources */,
-				052C2F060EE6140C0023E46D /* PLInstrumentConsoleResultHandler.m in Sources */,
-				052C2F070EE6140C0023E46D /* PLInstrumentResult.m in Sources */,
-				052C2F080EE6140C0023E46D /* PLInstrumentRunner.m in Sources */,
-				052C2F090EE6140C0023E46D /* PLInstrumentTime.m in Sources */,
 				052C2F0A0EE6140C0023E46D /* PLRunloopRPCProxy.m in Sources */,
 				052C2F0B0EE6140C0023E46D /* PLSimpleActorProcess.m in Sources */,
 				052C2F0C0EE6140C0023E46D /* PLThreadedActorProcess.m in Sources */,
@@ -841,11 +797,6 @@
 				05389E8C0EE6113300F8AA6F /* PLActorMessage.m in Sources */,
 				05389E8D0EE6113300F8AA6F /* PLRunloopRPCProxy.m in Sources */,
 				05389E8E0EE6113300F8AA6F /* PLActorSimpleQueue.m in Sources */,
-				05389E8F0EE6113300F8AA6F /* PLInstrumentCase.m in Sources */,
-				05389E900EE6113300F8AA6F /* PLInstrumentRunner.m in Sources */,
-				05389E910EE6113300F8AA6F /* PLInstrumentResult.m in Sources */,
-				05389E920EE6113300F8AA6F /* PLInstrumentTime.m in Sources */,
-				05389E930EE6113300F8AA6F /* PLInstrumentConsoleResultHandler.m in Sources */,
 				05389E940EE6113300F8AA6F /* PLActorWriteLockQueue.m in Sources */,
 				052C31510EE621EA0023E46D /* ActorKit.m in Sources */,
 			);
@@ -863,9 +814,6 @@
 				05257F3D0EA02A9200CEF58C /* PLActorMessageTests.m in Sources */,
 				05065BAF0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m in Sources */,
 				0577070E0ECA4E7400103B8A /* PLActorSimpleQueueTests.m in Sources */,
-				057709580ECA825200103B8A /* PLInstrumentRunnerTests.m in Sources */,
-				0577098C0ECE022C00103B8A /* PLInstrumentTimeTests.m in Sources */,
-				057709F90ECE0AC000103B8A /* PLInstrumentResultTests.m in Sources */,
 				0587F9B30ECEB9390066A0BC /* PLActorQueueTests.m in Sources */,
 				0587FC2E0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m in Sources */,
 			);
@@ -1152,6 +1100,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1185,6 +1137,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
@@ -1217,6 +1173,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -1248,6 +1208,10 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -27,14 +27,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ActorKit.h"
+@interface PLInstrumentCase : NSObject
 
-#import <PLInstrument/PLInstrument.h>
-
-@interface PLActorQueueInstruments : NSObject {
-
-}
-
-- (PLInstrumentResult *) runWithQueue: (id<PLActorQueue>) queue threadCount: (unsigned long) threadCount;
+- (void) setUp;
+- (void) tearDown;
 
 @end

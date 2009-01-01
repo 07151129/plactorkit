@@ -25,56 +25,47 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#import "ActorKit.h"
+#import "PLInstrumentTime.h"
+#import "PLInstrumentResult.h"
+#import "PLInstrumentCase.h"
 
-#import <PLInstrument/PLInstrument.h>
-#import "PLActorQueueInstruments.h"
+#import "PLInstrumentResultHandler.h"
+#import "PLInstrumentRunner.h"
 
-@interface PLActorWriteLockQueueInstrumentation : PLInstrumentCase {
-@private
-    id<PLActorQueue> _queue;
-    PLActorQueueInstruments *_instruments;
-}
-@end
-
-@implementation PLActorWriteLockQueueInstrumentation
-
-- (void) setUp {
-    _queue = [[PLActorWriteLockQueue alloc] init];
-    _instruments = [[PLActorQueueInstruments alloc] init];
-}
-
-- (void) tearDown {
-    [_queue release];
-    [_instruments release];
-}
+#import "PLInstrumentConsoleResultHandler.h"
 
 /**
- * Measure send performance with one concurrent sender and receiver.
+ * @defgroup functions Functions Reference
  */
-- (PLInstrumentResult *) instrumentOneSender {
-    return [_instruments runWithQueue: _queue threadCount: 1];
-}
 
 /**
- * Measure send performance with two concurrent senders and one receiver.
+ * @defgroup constants Constants Reference
  */
-- (PLInstrumentResult *) instrumentTwoSenders {
-    return [_instruments runWithQueue: _queue threadCount: 2];
-}
 
 /**
- * Measure send performance with four concurrent senders and one receiver.
+ * @defgroup types Types Reference
+ * @ingroup constants
  */
-- (PLInstrumentResult *) instrumentFourSenders {
-    return [_instruments runWithQueue: _queue threadCount: 4];
-}
 
 /**
- * Measure send performance with eight concurrent senders and one receiver.
+ * @defgroup enums Enumerations
+ * @ingroup constants
  */
-- (PLInstrumentResult *) instrumentEightSenders {
-    return [_instruments runWithQueue: _queue threadCount: 8];
-}
 
-@end
+/**
+ * @defgroup globals Global Variables
+ * @ingroup constants
+ */
+
+/**
+ * @defgroup exceptions Exceptions
+ * @ingroup constants
+ */
+
+
+/**
+ * @mainpage Plausible Instrument
+ *
+ * @section intro_sec Introduction
+ *
+ */

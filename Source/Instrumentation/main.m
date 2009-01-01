@@ -27,7 +27,7 @@
 
 #import <stdlib.h>
 
-#import "PLInstrument.h"
+#import <PLInstrument/PLInstrument.h>
 
 /*
  * Shared main for iPhone and Mac OS X instrumentation.
