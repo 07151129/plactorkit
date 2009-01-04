@@ -66,20 +66,20 @@
 
 /* Actor thread entry point. */
 static void *run_actor (void *arg) {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     PLThreadedActorProcess *proc = arg;
-    
+
     /* Register our actor process */
     [PLActorKit setThreadProcess: proc];
     
     /* Start the user's code */
-    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     objc_msgSend(proc->_target_obj, proc->_target_sel, proc->_target_arg);
-    [pool release];
     
     /* We retained ourself when spawning this thread.
      * Now that the actor has returned, release ourself. */
     [proc release];
-    
+
+    [pool release];
     return NULL;
 }
 
