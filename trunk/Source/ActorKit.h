@@ -389,7 +389,7 @@ typedef BOOL (*plactor_receive_filter_t) (id message, void *context);
  * @endcode
  *
  * @section services Integration & Development Services
- * ActorKit is provided free of charge under the BSD license, and may be freely integrated with any application.
+ * ActorKit is provided free of charge under the MIT license, and may be freely integrated with any application.
  * We can provide assistance with integrating our code in your own iPhone or Mac application, as well as development of additional features under
  * a license of your choosing.
  *
