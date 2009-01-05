@@ -100,14 +100,18 @@ static inline BOOL filterDequeued (PLActorWriteLockQueue *self, id *message, pla
         PLActorReadWriteLockQueueNode *prev = NULL;
         PLActorReadWriteLockQueueNode *cur = self->_dequeued;
         while (cur != NULL) {
-            /* If no match, continue */
-            if (!filter(cur->value, filterContext)) {
-                prev = cur;
-                cur = cur->next;
-                continue;
-            }
-            
-            /* Match, remove the current element from the list */
+            /* Match found? */
+            if (filter(cur->value, filterContext))
+                break;
+
+            /* Keep searching */
+            prev = cur;
+            cur = cur->next;
+        }
+
+        /* Was a match found? */
+        if (cur != NULL) {
+            /* Remove the current element from the list */
             if (cur == self->_dequeued) {
                 self->_dequeued = cur->next;
             } else {

@@ -111,22 +111,26 @@ static BOOL equality_filter (id obj, void *context) {
 
     PLActorMessage *receivedMsg;
     
-    /* Send the message */
+    /* Send the messages. Three messages are used, and are extracted in reverse order
+     * to test handling of skipped messages during selective receive. (See issue #2)*/
+    [_q send: [PLActorMessage messageWithObject: @"First"]];
     [_q send: [PLActorMessage messageWithObject: @"Hello"]];
     [_q send: [PLActorMessage messageWithObject: @"Goodbye"]];
-    
-    /* Now wait for the echo */
-    BOOL result = [_q receive: &receivedMsg 
-                 usingFilter: &equality_filter 
-               filterContext: @"Goodbye"
-                 withTimeout: PLActorTimeWaitForever];
-    STAssertTrue(result, @"Received failed");
-    
+
+    /* Fetch the good bye */
+    STAssertTrue([_q receive: &receivedMsg  usingFilter: &equality_filter filterContext: @"Goodbye"withTimeout: PLActorTimeWaitForever], 
+                 @"Receive failed");    
     STAssertTrue([[receivedMsg object] isEqual: @"Goodbye"], @"Invalid message returned, selective receive incorrect");
 
-    /* Now fetch the Hello */
-    STAssertTrue([_q receive: &receivedMsg usingFilter: NULL filterContext: NULL withTimeout: PLActorTimeWaitForever], @"Receive failed");
+    /* Now fetch the hello */
+    STAssertTrue([_q receive: &receivedMsg usingFilter: &equality_filter filterContext: @"Hello" withTimeout: PLActorTimeWaitForever],
+                 @"Receive failed");
     STAssertTrue([[receivedMsg object] isEqual: @"Hello"], @"Invalid message returned, selective receive incorrect");
+
+    /* Fetch the first message */
+    STAssertTrue([_q receive: &receivedMsg usingFilter: &equality_filter filterContext: @"First" withTimeout: PLActorTimeWaitForever],
+                 @"Receive failed");
+    STAssertTrue([[receivedMsg object] isEqual: @"First"], @"Invalid message returned, selective receive incorrect");
 }
 
 
