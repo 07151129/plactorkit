@@ -1,15 +1,15 @@
-
+<?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
     <id>http://plactorkit.googlecode.com/svn//xcode-docset//plactorkit-1.0.atom/20081202234229</id>
     <title type="text">Plausible ActorKit 1.0</title>
     <link rel="self" href="http://plactorkit.googlecode.com/svn//xcode-docset//plactorkit-1.0.atom"></link>
-    <updated>2008-12-02T23:42:29-08:00</updated>
+    <updated>2009-01-05T11:39:35-08:00</updated>
     <entry>
         <id>tag:plactorkit.googlecode.com,2008-12-02:com.plausiblelabs.ActorKit.docset/1.0.0</id>
         <title type="text">Plausible ActorKit</title>
-        <updated>2008-12-02T23:42:29-08:00</updated>
+        <updated>2009-01-05T11:39:35-08:00</updated>
         <content type="text">Plausible ActorKit (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http://plactorkit.googlecode.com/svn//xcode-docset//com.plausiblelabs.ActorKit-1.0-beta1.xar" length="336185"></link>
+        <link rel="enclosure" type="application/octet-stream" href="http://plactorkit.googlecode.com/svn//xcode-docset//com.plausiblelabs.ActorKit-1.0-beta2.xar" length="337045"></link>
         <docset:identifier>com.plausiblelabs.ActorKit.docset</docset:identifier>
         <docset:version>1.0.0</docset:version>
     </entry>
