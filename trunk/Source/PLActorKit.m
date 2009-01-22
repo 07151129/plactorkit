@@ -32,7 +32,7 @@
 pthread_key_t _thread_process;
 
 
-/** @internal Release thread mailbox on thread exit */
+/** @internal Release thread process on thread exit */
 static void thread_process_destructor (void *value) {
     id proc = value;
     [proc release];
@@ -64,22 +64,22 @@ static void thread_process_destructor (void *value) {
 
 /**
  * @internal
- * Set the current thread's mailbox
+ * Set the current thread's process
  */
-+ (void) setThreadProcess: (id<PLActorLocalProcess>) mailbox {
++ (void) setThreadProcess: (id<PLActorLocalProcess>) process {
     assert(pthread_getspecific(_thread_process) == nil);
 
-    pthread_setspecific(_thread_process, [mailbox retain]);
+    pthread_setspecific(_thread_process, [process retain]);
 }
 
 /**
  * @internal
- * Get the current thread's mailbox.
+ * Get the current thread's process.
  */
 + (id<PLActorLocalProcess>) threadProcess {
     id<PLActorLocalProcess> proc = pthread_getspecific(_thread_process);
 
-    /* Simple case (registered mailbox) */
+    /* Simple case (registered process) */
     if (proc != nil)
         return proc;
 
