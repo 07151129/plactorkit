@@ -84,7 +84,7 @@ static void thread_process_destructor (void *value) {
         return proc;
 
     /* No process registered, create one */
-    proc = [[PLSimpleActorProcess alloc] init];
+    proc = [[[PLSimpleActorProcess alloc] init] autorelease];
     [self setThreadProcess: proc];
 
     return proc;
