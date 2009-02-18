@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+  <TOC>
+    <Node>
+      <Name>Root</Name>
+      <Path>index.html</Path>
+      <Subnodes>
+       <Node>
+        <Name>Plausible ActorKit</Name>
+        <Path>index.html</Path>
+       </Node>
+       <Node>
+        <Name>Error Handling Programming Guide</Name>
+        <Path>error_handling.html</Path>
+        <Subnodes>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Modules</Name>
+        <Path>modules.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>Functions Reference</Name>
+          <Path>group__functions.html</Path>
+          <Subnodes>
+          </Subnodes>
+         </Node>
+         <Node>
+          <Name>Constants Reference</Name>
+          <Path>group__constants.html</Path>
+          <Subnodes>
+           <Node>
+            <Name>Types Reference</Name>
+            <Path>group__types.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Enumerations</Name>
+            <Path>group__enums.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Global Variables</Name>
+            <Path>group__globals.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>Exceptions</Name>
+            <Path>group__exceptions.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>PLActorTimeInterval Constants</Name>
+            <Path>group__constants__plactor__timewait.html</Path>
+            <Subnodes>
+            </Subnodes>
+           </Node>
+          </Subnodes>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Class List</Name>
+        <Path>annotated.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>PLActorKit</Name>
+          <Path>interface_p_l_actor_kit.html</Path>
+         </Node>
+         <Node>
+          <Name>PLActorMessage</Name>
+          <Path>interface_p_l_actor_message.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; PLActorProcess &gt;</Name>
+          <Path>protocol_p_l_actor_process-p.html</Path>
+         </Node>
+         <Node>
+          <Name>PLActorRPC</Name>
+          <Path>interface_p_l_actor_r_p_c.html</Path>
+         </Node>
+         <Node>
+          <Name>PLActorRPCProxy</Name>
+          <Path>interface_p_l_actor_r_p_c_proxy.html</Path>
+         </Node>
+         <Node>
+          <Name>PLRunloopRPCProxy</Name>
+          <Path>interface_p_l_runloop_r_p_c_proxy.html</Path>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Class Hierarchy</Name>
+        <Path>hierarchy.html</Path>
+        <Subnodes>
+         <Node>
+          <Name>PLActorKit</Name>
+          <Path>interface_p_l_actor_kit.html</Path>
+         </Node>
+         <Node>
+          <Name>PLActorMessage</Name>
+          <Path>interface_p_l_actor_message.html</Path>
+         </Node>
+         <Node>
+          <Name>&lt; PLActorProcess &gt;</Name>
+          <Path>protocol_p_l_actor_process-p.html</Path>
+         </Node>
+         <Node>
+          <Name>PLActorRPC</Name>
+          <Path>interface_p_l_actor_r_p_c.html</Path>
+         </Node>
+         <Node>
+          <Name>PLActorRPCProxy</Name>
+          <Path>interface_p_l_actor_r_p_c_proxy.html</Path>
+         </Node>
+         <Node>
+          <Name>PLRunloopRPCProxy</Name>
+          <Path>interface_p_l_runloop_r_p_c_proxy.html</Path>
+         </Node>
+        </Subnodes>
+       </Node>
+       <Node>
+        <Name>Class Members</Name>
+        <Path>functions.html</Path>
+       </Node>
+       <Node>
+        <Name>Graphical Class Hierarchy</Name>
+        <Path>inherits.html</Path>
+       </Node>
+       <Node>
+        <Name>File List</Name>
+        <Path>files.html</Path>
+        <Subnodes>
+        </Subnodes>
+       </Node>
+      </Subnodes>
+    </Node>
+  </TOC>
+</DocSetNodes>
