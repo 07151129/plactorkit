@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+  <Token>
+    <TokenIdentifier>
+      <Name>plactor_receive_filter_t</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>tdef</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__functions.html</Path>
+    <Anchor>g9ddc3ac1181a1ecc4d7bf9fda035815e</Anchor>
+    <Abstract>A selective receive filter function.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorTxId</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>tdef</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__types.html</Path>
+    <Anchor>g666927d595ddb2a43acd1a897841fcd8</Anchor>
+    <Abstract>Per-actor unique transaction ID.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorTimeInterval</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>tdef</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__types.html</Path>
+    <Anchor>g9dd4ce7f46f2d5463b23a3c673190a72</Anchor>
+    <Abstract>Used to specify a time interval, in milliseconds.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorErrorUnknown</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>econst</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__enums.html</Path>
+    <Anchor>ggf580f86f839a62751c199505dcd4ee8e2d1607459088c01cab91e878083905c6</Anchor>
+    <Abstract>An unknown error has occured.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorErrorDomain</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>data</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__globals.html</Path>
+    <Anchor>ged58e1cf89d36b251f2db378217b7d67</Anchor>
+    <Abstract>Plausible ActorKit NSError Domain.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorException</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>data</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__exceptions.html</Path>
+    <Anchor>g999099c74bf9f9225037f54519caac87</Anchor>
+    <Abstract>Generic ActorKit Exception.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorTimeWaitForever</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>macro</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__constants__plactor__timewait.html</Path>
+    <Anchor>gac2b18c95c4a82ddaaf8f20a09e18bcc</Anchor>
+    <Abstract>Wait forever.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorTimeWaitNone</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>macro</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>group__constants__plactor__timewait.html</Path>
+    <Anchor>gd5c5ebf8a3f643d803d09b3b926f5b8f</Anchor>
+    <Abstract>Do not wait.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorKit</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Abstract>Provides support for spawning new actors and receiving actor messages.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>spawnWithTarget:selector:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>2d8568f22675fad287f6452edbb32f44</Anchor>
+    <Abstract>Spawn a new actor process.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>spawnWithTarget:selector:object:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>c9a6f31ce94d307366d367b627404c9b</Anchor>
+    <Abstract>Spawn a new actor process with the provided method argument.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>receive</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>2a1caf777a518a4208723b95bcfcea85</Anchor>
+    <Abstract>Receive a message.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>receive:withTimeout:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>ab754a77e621a71d5f026ebf7b7cd34a</Anchor>
+    <Abstract>Receive a message with the given timeout.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>receive:usingFilter:filterContext:withTimeout:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>dc7a75fb8e3d7ceb1878be638d606e76</Anchor>
+    <Abstract>Perform a selective receive, using the provided filter function to select the first...</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>createTransactionId</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>f21c16c72cad51f2cff56e86fca8ffcc</Anchor>
+    <Abstract>Generate a unique transaction ID; the ID will be unique within the current actor...</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>process</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorKit</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_kit.html</Path>
+    <Anchor>fe6a16eee13b258ac9a26465eaeadc89</Anchor>
+    <Abstract>Return your process id.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorMessage</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Abstract>A reusable base class for messaging.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>init</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>fee3b89490dfe4dab51c0e40ea9f8496</Anchor>
+    <Abstract>Initialize with a nil object payload.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>initWithObject:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>bf3177b5d7b51362d49a88e51d88fe66</Anchor>
+    <Abstract>Initialize with the given object payload.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>initWithObject:transactionId:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>328cebee74bcb5041a354ddfe8221d81</Anchor>
+    <Abstract>Initialize with the given object payload and transaction id.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>sender</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>844f8b1c568401b4aa0d7401257878b7</Anchor>
+    <Abstract>Return the message sender.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>object</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>269166c330fd76410b5593cb7d9f3b58</Anchor>
+    <Abstract>Return the message contents.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>transactionId</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>e29d890c07d4ebbb0a2bd5f3344271d4</Anchor>
+    <Abstract>Return the message transaction ID.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>message</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>84ab0dee8eee11c72dfd21434d250543</Anchor>
+    <Abstract>Create a new message with a nil object payload.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>messageWithObject:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>458186c76877861d4da66ffefe24d15a</Anchor>
+    <Abstract>Create a new message with the given object payload.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>messageWithObject:transactionId:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorMessage</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_message.html</Path>
+    <Anchor>c9a42bc2ee6803b5b53895bde8d7d006</Anchor>
+    <Abstract>Create a new message with the given object payload and transaction id.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorProcess-p</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>protocol_p_l_actor_process-p.html</Path>
+    <Abstract>An Actor process instance.</Abstract>
+    <DeclaredIn>PLActorProcess.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>send:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>func</Type>
+      <Scope>PLActorProcess-p</Scope>
+    </TokenIdentifier>
+    <Path>protocol_p_l_actor_process-p.html</Path>
+    <Anchor>63f3093cd92462b570ba40fabb6ec1d0</Anchor>
+    <Abstract>Send a message to the process.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorRPC</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_r_p_c.html</Path>
+    <Abstract>Provides remote procedure call services.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>sendRPC:toProcess:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorRPC</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_r_p_c.html</Path>
+    <Anchor>95993964b2cc80823bcfa614c6800c10</Anchor>
+    <Abstract>Send the rpcMessage to the given process, and synchronously wait for a response with...</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLActorRPCProxy</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_r_p_c_proxy.html</Path>
+    <Abstract>The PLActorProxy provides transparent invocation of Objective-C messages on a local...</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>initWithTarget:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorRPCProxy</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_r_p_c_proxy.html</Path>
+    <Anchor>313876374cf272cdaf6267a53be1f89c</Anchor>
+    <Abstract>Initialize the RPC proxy with the provided target object.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>proxyWithTarget:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLActorRPCProxy</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_actor_r_p_c_proxy.html</Path>
+    <Anchor>1f1bcef1f11ea7efbcb11bd9b88de9f0</Anchor>
+    <Abstract>Create an RPC proxy with the provided target object.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PLRunloopRPCProxy</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>cl</Type>
+      <Scope></Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_runloop_r_p_c_proxy.html</Path>
+    <Abstract>The PLRunloopRPCProxy provides transparent invocation of Objective-C messages on...</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>initWithTarget:runLoop:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLRunloopRPCProxy</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_runloop_r_p_c_proxy.html</Path>
+    <Anchor>999f1d7737e103f4804af972114a39fb</Anchor>
+    <Abstract>Create an RPC proxy with the provided target and runloop objects.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>proxyWithTarget:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLRunloopRPCProxy</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_runloop_r_p_c_proxy.html</Path>
+    <Anchor>1f9d6a441491e7e7b82d69d803c0f2d3</Anchor>
+    <Abstract>Create an RPC proxy with the provided target object.</Abstract>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>proxyWithTarget:runLoop:</Name>
+      <APILanguage>occ</APILanguage>
+      <Type>clm</Type>
+      <Scope>PLRunloopRPCProxy</Scope>
+    </TokenIdentifier>
+    <Path>interface_p_l_runloop_r_p_c_proxy.html</Path>
+    <Anchor>bd7c1bc989a63e992935e71cbf001dfb</Anchor>
+    <Abstract>Create an RPC proxy with the given target object.</Abstract>
+  </Token>
+</Tokens>
