@@ -87,6 +87,8 @@
 		05389E8E0EE6113300F8AA6F /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
 		05389E940EE6113300F8AA6F /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
 		05411B0E0E47B385009E3C18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05411B0C0E47B385009E3C18 /* Foundation.framework */; };
+		055DE14D0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */; };
+		055DE14E0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */; };
 		056E46170E492ACD00F3319F /* PLActorKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E46160E492ACD00F3319F /* PLActorKitTests.m */; };
 		0577070E0ECA4E7400103B8A /* PLActorSimpleQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577070D0ECA4E7400103B8A /* PLActorSimpleQueueTests.m */; };
 		057708070ECA57D100103B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 057707E30ECA568A00103B8A /* main.m */; };
@@ -227,6 +229,7 @@
 		05411ACD0E47AD0B009E3C18 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		05411B0C0E47B385009E3C18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		05411B120E47B3AA009E3C18 /* PLActorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorKit.m; sourceTree = "<group>"; };
+		055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorRPCProxyInstrumentation.m; sourceTree = "<group>"; };
 		056E46160E492ACD00F3319F /* PLActorKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorKitTests.m; sourceTree = "<group>"; };
 		057706BE0ECA40E600103B8A /* PLActorQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorQueue.h; sourceTree = "<group>"; };
 		057706C00ECA417500103B8A /* PLActorSimpleQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorSimpleQueue.h; sourceTree = "<group>"; };
@@ -335,6 +338,7 @@
 				0520FCDA0EA003AA000B1751 /* PLActorRPCProxy.h */,
 				0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */,
 				0520FCE00EA003B6000B1751 /* PLActorRPCProxyTests.m */,
+				055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */,
 			);
 			name = RPC;
 			sourceTree = "<group>";
@@ -827,6 +831,7 @@
 				052C2F2B0EE615020023E46D /* PLActorQueueInstruments.m in Sources */,
 				052C2F2C0EE615020023E46D /* PLActorWriteLockQueueInstrumentation.m in Sources */,
 				0577080C0ECA57E200103B8A /* main.m in Sources */,
+				055DE14E0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -838,6 +843,7 @@
 				052C2F2E0EE6150A0023E46D /* PLActorQueueInstruments.m in Sources */,
 				052C2F2F0EE6150A0023E46D /* PLActorWriteLockQueueInstrumentation.m in Sources */,
 				057708070ECA57D100103B8A /* main.m in Sources */,
+				055DE14D0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
