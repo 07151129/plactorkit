@@ -37,8 +37,18 @@ int main (int argc, char *argv[]) {
     PLInstrumentConsoleResultHandler *handler = [[[PLInstrumentConsoleResultHandler alloc] init] autorelease];
     PLInstrumentRunner *runner = [[[PLInstrumentRunner alloc] initWithResultHandler: handler] autorelease];
 
-    /* Run all instrument cases */
-    [runner runAllCases];
+    if (argc > 1) {
+        /* Run one case */
+        id cls = objc_getClass(argv[1]);
+        if (cls == nil) {
+            fprintf(stderr, "No such class %s\n", argv[1]);
+            return EXIT_FAILURE;
+        }
+        [runner runCase: [[cls new] autorelease]];
+    } else {
+        /* Run all instrument cases */
+        [runner runAllCases];
+    }
 
     [pool release];
 
