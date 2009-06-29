@@ -41,6 +41,8 @@ DOCSET_ATOM="${PROJECT_NAME}-${DOCSET_VERSION}.atom"
 DOCSET_INPUT_FILE="${DOCSET_ID}.docset"
 DOCSET_OUTPUT_FILE="${DOCSET_ID}-${VERSION}.xar"
 DOCSET_PUBLIC_URL="${PUBLIC_SVN_URL}/xcode-docset/"
+DOCSET_PUBLISHER_ID="com.plausiblelabs.documentation"
+DOCSET_PUBLISHER_NAME="Plausible Labs"
 
 # Xcode paths
 XCODE_BASE=`xcode-select -print-path`
@@ -57,6 +59,8 @@ make -C "${TAG_DIR}/docs"
 # Populate the docset meta-data
 /usr/libexec/PlistBuddy -c "Add :DocSetFeedURL string ${DOCSET_PUBLIC_URL}/${DOCSET_ATOM}" "${TAG_DIR}/docs/${DOCSET_INPUT_FILE}/Contents/Info.plist" 
 /usr/libexec/PlistBuddy -c "Set :DocSetFeedName \"${DOCSET_BUNDLE_NAME} ${DOCSET_VERSION}\"" "${TAG_DIR}/docs/${DOCSET_INPUT_FILE}/Contents/Info.plist"
+/usr/libexec/PlistBuddy -c "Add :DocSetPublisherIdentifier string \"${DOCSET_PUBLISHER_ID}\"" "${TAG_DIR}/docs/${DOCSET_INPUT_FILE}/Contents/Info.plist"
+/usr/libexec/PlistBuddy -c "Add :DocSetPublisherName string \"${DOCSET_PUBLISHER_NAME}\"" "${TAG_DIR}/docs/${DOCSET_INPUT_FILE}/Contents/Info.plist"
 
 /usr/libexec/PlistBuddy -c "Add :CFBundleVersion string ${VERSION}" "${TAG_DIR}/docs/${DOCSET_INPUT_FILE}/Contents/Info.plist" 
 /usr/libexec/PlistBuddy -c "Set :CFBundleName ${DOCSET_BUNDLE_NAME}" "${TAG_DIR}/docs/${DOCSET_INPUT_FILE}/Contents/Info.plist" 
