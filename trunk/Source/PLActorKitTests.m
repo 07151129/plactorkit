@@ -38,6 +38,7 @@
 
 /* Simple echo actor */
 - (void) threadedEcho {
+    NSLog(@"Hello");
     PLActorMessage *msg = [PLActorKit receive];
     PLActorMessage *resp = [PLActorMessage messageWithObject: [msg object]];
 
