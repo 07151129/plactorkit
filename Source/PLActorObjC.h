@@ -30,25 +30,7 @@
 
 #if TARGET_OS_IPHONE
 #import <objc/runtime.h>
+#import <objc/message.h>
 #else
 #import <objc/objc-runtime.h>
 #endif
-
-/**
- * @internal
- * @defgroup functions_objc Objective-C Compatibility Functions
- *
- * Objective-C 2.0 backwards compatibility functions and macros for
- * for Mac OS X 10.4 (and in the future, cocotron)
- */
-
-#if (MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5)
-
-/**
- * Fetch the method return type encoding.
- */
-#define method_getReturnType(meth, dest, len) { \
-    strncpy(dest, meth->method_types, len); \
-}
-
-#endif /* MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5 */
