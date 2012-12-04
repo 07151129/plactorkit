@@ -1,0 +1,1361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		052C2F190EE6148B0023E46D /* ActorKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 052C2F290EE614AD0023E46D /* Build configuration list for PBXAggregateTarget "ActorKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+				052C2F210EE614950023E46D /* PBXTargetDependency */,
+				052C2F1F0EE614950023E46D /* PBXTargetDependency */,
+				052C2F1D0EE614950023E46D /* PBXTargetDependency */,
+				052C2FD30EE61C230023E46D /* PBXTargetDependency */,
+			);
+			name = ActorKit;
+			productName = ActorKit;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0500A6350F0C687B0067DC6C /* PLInstrument.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0500A62A0F0C68710067DC6C /* PLInstrument.framework */; };
+		0500A6430F0C689F0067DC6C /* PLInstrument.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0500A62A0F0C68710067DC6C /* PLInstrument.framework */; };
+		05065BAF0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BAE0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m */; };
+		05102EFF0E986DF100CF6E6E /* PLActorRPCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05102EFE0E986DF100CF6E6E /* PLActorRPCTests.m */; };
+		0520FCE30EA003B6000B1751 /* PLActorRPCProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0520FCE00EA003B6000B1751 /* PLActorRPCProxyTests.m */; };
+		05257F3D0EA02A9200CEF58C /* PLActorMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F3C0EA02A9200CEF58C /* PLActorMessageTests.m */; };
+		052B56590E5210D9008638FF /* PLThreadedActorProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56580E5210D9008638FF /* PLThreadedActorProcessTests.m */; };
+		052B56890E522303008638FF /* PLSimpleActorProcessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56880E522303008638FF /* PLSimpleActorProcessTests.m */; };
+		052C2E4A0EE6128B0023E46D /* PLActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 05411B120E47B3AA009E3C18 /* PLActorKit.m */; };
+		052C2E4B0EE6128B0023E46D /* PLThreadedActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56550E5210A8008638FF /* PLThreadedActorProcess.m */; };
+		052C2E4C0EE6128B0023E46D /* PLSimpleActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56780E522061008638FF /* PLSimpleActorProcess.m */; };
+		052C2E4D0EE6128B0023E46D /* PLActorRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05102EFB0E986DAC00CF6E6E /* PLActorRPC.m */; };
+		052C2E4E0EE6128B0023E46D /* PLActorRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */; };
+		052C2E4F0EE6128B0023E46D /* PLActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F350EA02A1800CEF58C /* PLActorMessage.m */; };
+		052C2E500EE6128B0023E46D /* PLRunloopRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */; };
+		052C2E510EE6128B0023E46D /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
+		052C2E570EE6128B0023E46D /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
+		052C2EFF0EE6140C0023E46D /* PLActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 05411B120E47B3AA009E3C18 /* PLActorKit.m */; };
+		052C2F000EE6140C0023E46D /* PLActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F350EA02A1800CEF58C /* PLActorMessage.m */; };
+		052C2F010EE6140C0023E46D /* PLActorRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05102EFB0E986DAC00CF6E6E /* PLActorRPC.m */; };
+		052C2F020EE6140C0023E46D /* PLActorRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */; };
+		052C2F030EE6140C0023E46D /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
+		052C2F040EE6140C0023E46D /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
+		052C2F0A0EE6140C0023E46D /* PLRunloopRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */; };
+		052C2F0B0EE6140C0023E46D /* PLSimpleActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56780E522061008638FF /* PLSimpleActorProcess.m */; };
+		052C2F0C0EE6140C0023E46D /* PLThreadedActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56550E5210A8008638FF /* PLThreadedActorProcess.m */; };
+		052C2F2A0EE615020023E46D /* PLActorSimpleQueueInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 05770AD30ECE195600103B8A /* PLActorSimpleQueueInstrumentation.m */; };
+		052C2F2B0EE615020023E46D /* PLActorQueueInstruments.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F7790ECE82AC0066A0BC /* PLActorQueueInstruments.m */; };
+		052C2F2C0EE615020023E46D /* PLActorWriteLockQueueInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587FC320ECFBC010066A0BC /* PLActorWriteLockQueueInstrumentation.m */; };
+		052C2F2D0EE6150A0023E46D /* PLActorSimpleQueueInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 05770AD30ECE195600103B8A /* PLActorSimpleQueueInstrumentation.m */; };
+		052C2F2E0EE6150A0023E46D /* PLActorQueueInstruments.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F7790ECE82AC0066A0BC /* PLActorQueueInstruments.m */; };
+		052C2F2F0EE6150A0023E46D /* PLActorWriteLockQueueInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587FC320ECFBC010066A0BC /* PLActorWriteLockQueueInstrumentation.m */; };
+		052C2FE80EE61CA60023E46D /* ActorKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 05389E820EE6111600F8AA6F /* ActorKit.framework */; };
+		052C2FFC0EE61CFA0023E46D /* ActorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05389E820EE6111600F8AA6F /* ActorKit.framework */; };
+		052C30230EE61D8B0023E46D /* ActorKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 05389E820EE6111600F8AA6F /* ActorKit.framework */; };
+		052C30260EE61D910023E46D /* ActorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05389E820EE6111600F8AA6F /* ActorKit.framework */; };
+		052C30AA0EE61EE80023E46D /* PLThreadedActorProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 052B56540E5210A8008638FF /* PLThreadedActorProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30AB0EE61EE90023E46D /* PLSimpleActorProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 052B56770E522061008638FF /* PLSimpleActorProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30AC0EE61EEA0023E46D /* PLRunloopRPCProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 05065BA60EB711F500DAFB9D /* PLRunloopRPCProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30AD0EE61EEC0023E46D /* PLActorWriteLockQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0587F9660ECEB6D10066A0BC /* PLActorWriteLockQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30AE0EE61EED0023E46D /* PLActorSimpleQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 057706C00ECA417500103B8A /* PLActorSimpleQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30AF0EE61EEE0023E46D /* PLActorQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 057706BE0ECA40E600103B8A /* PLActorQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30B00EE61EEE0023E46D /* PLActorProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 05411AC30E47AD01009E3C18 /* PLActorProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30B10EE61EEF0023E46D /* PLActorObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05D410BB0EDA29250076F0CE /* PLActorObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30B20EE61EF20023E46D /* PLActorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 05257F340EA02A1800CEF58C /* PLActorMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30B30EE61EF20023E46D /* PLActorLocalProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 052B566C0E521D42008638FF /* PLActorLocalProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30B40EE61EF30023E46D /* PLActorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05411AC10E47ACD2009E3C18 /* PLActorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30C10EE61F790023E46D /* PLActorRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 05102EFA0E986DAC00CF6E6E /* PLActorRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C30C20EE61F7A0023E46D /* PLActorRPCProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0520FCDA0EA003AA000B1751 /* PLActorRPCProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C31350EE621940023E46D /* ActorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 052C31340EE621940023E46D /* ActorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		052C31510EE621EA0023E46D /* ActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C31500EE621EA0023E46D /* ActorKit.m */; };
+		052C31520EE621EA0023E46D /* ActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C31500EE621EA0023E46D /* ActorKit.m */; };
+		052C31530EE621EA0023E46D /* ActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 052C31500EE621EA0023E46D /* ActorKit.m */; };
+		05389E870EE6113300F8AA6F /* PLActorKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 05411B120E47B3AA009E3C18 /* PLActorKit.m */; };
+		05389E880EE6113300F8AA6F /* PLThreadedActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56550E5210A8008638FF /* PLThreadedActorProcess.m */; };
+		05389E890EE6113300F8AA6F /* PLSimpleActorProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 052B56780E522061008638FF /* PLSimpleActorProcess.m */; };
+		05389E8A0EE6113300F8AA6F /* PLActorRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05102EFB0E986DAC00CF6E6E /* PLActorRPC.m */; };
+		05389E8B0EE6113300F8AA6F /* PLActorRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */; };
+		05389E8C0EE6113300F8AA6F /* PLActorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05257F350EA02A1800CEF58C /* PLActorMessage.m */; };
+		05389E8D0EE6113300F8AA6F /* PLRunloopRPCProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */; };
+		05389E8E0EE6113300F8AA6F /* PLActorSimpleQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */; };
+		05389E940EE6113300F8AA6F /* PLActorWriteLockQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */; };
+		05411B0E0E47B385009E3C18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05411B0C0E47B385009E3C18 /* Foundation.framework */; };
+		055DE14D0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */; };
+		055DE14E0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */; };
+		056E46170E492ACD00F3319F /* PLActorKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 056E46160E492ACD00F3319F /* PLActorKitTests.m */; };
+		0577070E0ECA4E7400103B8A /* PLActorSimpleQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577070D0ECA4E7400103B8A /* PLActorSimpleQueueTests.m */; };
+		057708070ECA57D100103B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 057707E30ECA568A00103B8A /* main.m */; };
+		0577080C0ECA57E200103B8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 057707E30ECA568A00103B8A /* main.m */; };
+		0587F9B30ECEB9390066A0BC /* PLActorQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587F9B20ECEB9390066A0BC /* PLActorQueueTests.m */; };
+		0587FC2E0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587FC2D0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		052C2EDB0EE613420023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05389E810EE6111600F8AA6F;
+			remoteInfo = "ActorKit-MacOSX";
+		};
+		052C2F1C0EE614950023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C2EFB0EE613E40023E46D;
+			remoteInfo = "ActorKit-iPhoneSimulator";
+		};
+		052C2F1E0EE614950023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C2E460EE6127E0023E46D;
+			remoteInfo = "ActorKit-iPhoneOS";
+		};
+		052C2F200EE614950023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05389E810EE6111600F8AA6F;
+			remoteInfo = "ActorKit-MacOSX";
+		};
+		052C2F3E0EE616640023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05389E810EE6111600F8AA6F;
+			remoteInfo = "ActorKit-MacOSX";
+		};
+		052C2F400EE616670023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05389E810EE6111600F8AA6F;
+			remoteInfo = "ActorKit-MacOSX";
+		};
+		052C2F4D0EE616E60023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C2EFB0EE613E40023E46D;
+			remoteInfo = "ActorKit-iPhoneSimulator";
+		};
+		052C2F4F0EE616E60023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052C2E460EE6127E0023E46D;
+			remoteInfo = "ActorKit-iPhoneOS";
+		};
+		052C2FD20EE61C230023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05411ACB0E47AD0B009E3C18;
+			remoteInfo = "Tests-MacOSX";
+		};
+		052C30280EE61D930023E46D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05389E810EE6111600F8AA6F;
+			remoteInfo = "ActorKit-MacOSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		052C30020EE61D030023E46D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				052C2FE80EE61CA60023E46D /* ActorKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C30370EE61DB90023E46D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				052C30230EE61D8B0023E46D /* ActorKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0500A62A0F0C68710067DC6C /* PLInstrument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLInstrument.framework; path = "Components/PLInstrument-20081231-snap/PLInstrument-iPhone/PLInstrument.framework"; sourceTree = "<group>"; };
+		0500A6360F0C68870067DC6C /* PLInstrument.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PLInstrument.framework; path = "Components/PLInstrument-20081231-snap/PLInstrument-MacOSX/PLInstrument.framework"; sourceTree = "<group>"; };
+		05065BA60EB711F500DAFB9D /* PLRunloopRPCProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLRunloopRPCProxy.h; sourceTree = "<group>"; };
+		05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRunloopRPCProxy.m; sourceTree = "<group>"; };
+		05065BAE0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLRunloopRPCProxyTests.m; sourceTree = "<group>"; };
+		05102EFA0E986DAC00CF6E6E /* PLActorRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorRPC.h; sourceTree = "<group>"; };
+		05102EFB0E986DAC00CF6E6E /* PLActorRPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorRPC.m; sourceTree = "<group>"; };
+		05102EFE0E986DF100CF6E6E /* PLActorRPCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorRPCTests.m; sourceTree = "<group>"; };
+		0520FCDA0EA003AA000B1751 /* PLActorRPCProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorRPCProxy.h; sourceTree = "<group>"; };
+		0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorRPCProxy.m; sourceTree = "<group>"; };
+		0520FCE00EA003B6000B1751 /* PLActorRPCProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorRPCProxyTests.m; sourceTree = "<group>"; };
+		05257F340EA02A1800CEF58C /* PLActorMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorMessage.h; sourceTree = "<group>"; };
+		05257F350EA02A1800CEF58C /* PLActorMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorMessage.m; sourceTree = "<group>"; };
+		05257F3C0EA02A9200CEF58C /* PLActorMessageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorMessageTests.m; sourceTree = "<group>"; };
+		052B56540E5210A8008638FF /* PLThreadedActorProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLThreadedActorProcess.h; sourceTree = "<group>"; };
+		052B56550E5210A8008638FF /* PLThreadedActorProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLThreadedActorProcess.m; sourceTree = "<group>"; };
+		052B56580E5210D9008638FF /* PLThreadedActorProcessTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLThreadedActorProcessTests.m; sourceTree = "<group>"; };
+		052B566C0E521D42008638FF /* PLActorLocalProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorLocalProcess.h; sourceTree = "<group>"; };
+		052B56770E522061008638FF /* PLSimpleActorProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSimpleActorProcess.h; sourceTree = "<group>"; };
+		052B56780E522061008638FF /* PLSimpleActorProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSimpleActorProcess.m; sourceTree = "<group>"; };
+		052B56880E522303008638FF /* PLSimpleActorProcessTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSimpleActorProcessTests.m; sourceTree = "<group>"; };
+		052C2E470EE6127E0023E46D /* libActorKit-iphoneos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libActorKit-iphoneos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C2EFC0EE613E40023E46D /* libActorKit-iphonesimulator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libActorKit-iphonesimulator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C31340EE621940023E46D /* ActorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorKit.h; sourceTree = "<group>"; };
+		052C31500EE621EA0023E46D /* ActorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorKit.m; sourceTree = "<group>"; };
+		05389E820EE6111600F8AA6F /* ActorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05389E9E0EE6116600F8AA6F /* ActorKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ActorKit-Info.plist"; sourceTree = "<group>"; };
+		05411AC10E47ACD2009E3C18 /* PLActorKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorKit.h; sourceTree = "<group>"; };
+		05411AC30E47AD01009E3C18 /* PLActorProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorProcess.h; sourceTree = "<group>"; };
+		05411ACC0E47AD0B009E3C18 /* Tests-MacOSX.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-MacOSX.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05411ACD0E47AD0B009E3C18 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		05411B0C0E47B385009E3C18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		05411B120E47B3AA009E3C18 /* PLActorKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorKit.m; sourceTree = "<group>"; };
+		055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorRPCProxyInstrumentation.m; sourceTree = "<group>"; };
+		056E46160E492ACD00F3319F /* PLActorKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorKitTests.m; sourceTree = "<group>"; };
+		057706BE0ECA40E600103B8A /* PLActorQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorQueue.h; sourceTree = "<group>"; };
+		057706C00ECA417500103B8A /* PLActorSimpleQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorSimpleQueue.h; sourceTree = "<group>"; };
+		057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorSimpleQueue.m; sourceTree = "<group>"; };
+		0577070D0ECA4E7400103B8A /* PLActorSimpleQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorSimpleQueueTests.m; sourceTree = "<group>"; };
+		057707BF0ECA55E600103B8A /* Profiler-iPhoneOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profiler-iPhoneOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		057707C10ECA55E600103B8A /* Profiler-iPhoneOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Profiler-iPhoneOS-Info.plist"; sourceTree = "<group>"; };
+		057707CF0ECA562500103B8A /* Profiler-MacOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profiler-MacOSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		057707D10ECA562500103B8A /* Profiler-MacOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Profiler-MacOSX-Info.plist"; sourceTree = "<group>"; };
+		057707E30ECA568A00103B8A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05770AD30ECE195600103B8A /* PLActorSimpleQueueInstrumentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorSimpleQueueInstrumentation.m; sourceTree = "<group>"; };
+		0587F7780ECE82AC0066A0BC /* PLActorQueueInstruments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorQueueInstruments.h; sourceTree = "<group>"; };
+		0587F7790ECE82AC0066A0BC /* PLActorQueueInstruments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorQueueInstruments.m; sourceTree = "<group>"; };
+		0587F9660ECEB6D10066A0BC /* PLActorWriteLockQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorWriteLockQueue.h; sourceTree = "<group>"; };
+		0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorWriteLockQueue.m; sourceTree = "<group>"; };
+		0587F9B10ECEB9390066A0BC /* PLActorQueueTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorQueueTests.h; sourceTree = "<group>"; };
+		0587F9B20ECEB9390066A0BC /* PLActorQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorQueueTests.m; sourceTree = "<group>"; };
+		0587FC2D0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorWriteLockQueueTests.m; sourceTree = "<group>"; };
+		0587FC320ECFBC010066A0BC /* PLActorWriteLockQueueInstrumentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLActorWriteLockQueueInstrumentation.m; sourceTree = "<group>"; };
+		05D410BB0EDA29250076F0CE /* PLActorObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLActorObjC.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		052C2E450EE6127E0023E46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C2EFA0EE613E40023E46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05389E800EE6111600F8AA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05411AC90E47AD0B009E3C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C2FFC0EE61CFA0023E46D /* ActorKit.framework in Frameworks */,
+				05411B0E0E47B385009E3C18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057707BD0ECA55E600103B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0500A6350F0C687B0067DC6C /* PLInstrument.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057707CD0ECA562500103B8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0500A6430F0C689F0067DC6C /* PLInstrument.framework in Frameworks */,
+				052C30260EE61D910023E46D /* ActorKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0500A6390F0C688F0067DC6C /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				0500A6360F0C68870067DC6C /* PLInstrument.framework */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		0500A6420F0C68960067DC6C /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0500A62A0F0C68710067DC6C /* PLInstrument.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		05065BD70EB7210100DAFB9D /* Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				05065BA60EB711F500DAFB9D /* PLRunloopRPCProxy.h */,
+				05065BA70EB711F500DAFB9D /* PLRunloopRPCProxy.m */,
+				05065BAE0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m */,
+			);
+			name = Runloop;
+			sourceTree = "<group>";
+		};
+		05102EF90E986D7500CF6E6E /* RPC */ = {
+			isa = PBXGroup;
+			children = (
+				05102EFB0E986DAC00CF6E6E /* PLActorRPC.m */,
+				05102EFA0E986DAC00CF6E6E /* PLActorRPC.h */,
+				05102EFE0E986DF100CF6E6E /* PLActorRPCTests.m */,
+				0520FCDA0EA003AA000B1751 /* PLActorRPCProxy.h */,
+				0520FCDB0EA003AA000B1751 /* PLActorRPCProxy.m */,
+				0520FCE00EA003B6000B1751 /* PLActorRPCProxyTests.m */,
+				055DE14C0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m */,
+			);
+			name = RPC;
+			sourceTree = "<group>";
+		};
+		052B56650E5218B7008638FF /* Threaded */ = {
+			isa = PBXGroup;
+			children = (
+				052B56550E5210A8008638FF /* PLThreadedActorProcess.m */,
+				052B56540E5210A8008638FF /* PLThreadedActorProcess.h */,
+				052B56580E5210D9008638FF /* PLThreadedActorProcessTests.m */,
+			);
+			name = Threaded;
+			sourceTree = "<group>";
+		};
+		052B56760E522048008638FF /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				052B56780E522061008638FF /* PLSimpleActorProcess.m */,
+				052B56770E522061008638FF /* PLSimpleActorProcess.h */,
+				052B56880E522303008638FF /* PLSimpleActorProcessTests.m */,
+			);
+			name = Simple;
+			sourceTree = "<group>";
+		};
+		05411B0B0E47B361009E3C18 /* Linked Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0500A6420F0C68960067DC6C /* Mac */,
+				0500A6390F0C688F0067DC6C /* iPhone */,
+				05411B0C0E47B385009E3C18 /* Foundation.framework */,
+			);
+			name = "Linked Libraries";
+			sourceTree = "<group>";
+		};
+		05411BED0E47D960009E3C18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05389E9E0EE6116600F8AA6F /* ActorKit-Info.plist */,
+				057707C10ECA55E600103B8A /* Profiler-iPhoneOS-Info.plist */,
+				057707D10ECA562500103B8A /* Profiler-MacOSX-Info.plist */,
+				05411ACD0E47AD0B009E3C18 /* Tests-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		05411D340E4918E5009E3C18 /* Processes */ = {
+			isa = PBXGroup;
+			children = (
+				052B566C0E521D42008638FF /* PLActorLocalProcess.h */,
+				052B56650E5218B7008638FF /* Threaded */,
+				052B56760E522048008638FF /* Simple */,
+			);
+			name = Processes;
+			sourceTree = "<group>";
+		};
+		057706BD0ECA409400103B8A /* Queues */ = {
+			isa = PBXGroup;
+			children = (
+				0587F9BD0ECEBB8C0066A0BC /* Simple Queue */,
+				0587F9BF0ECEBB9C0066A0BC /* Write Lock */,
+				057706BE0ECA40E600103B8A /* PLActorQueue.h */,
+				0587F9B10ECEB9390066A0BC /* PLActorQueueTests.h */,
+				0587F9B20ECEB9390066A0BC /* PLActorQueueTests.m */,
+				0587F7780ECE82AC0066A0BC /* PLActorQueueInstruments.h */,
+				0587F7790ECE82AC0066A0BC /* PLActorQueueInstruments.m */,
+			);
+			name = Queues;
+			sourceTree = "<group>";
+		};
+		057706BF0ECA40EE00103B8A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				05D410BB0EDA29250076F0CE /* PLActorObjC.h */,
+				05411D340E4918E5009E3C18 /* Processes */,
+				057706BD0ECA409400103B8A /* Queues */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		057707230ECA535D00103B8A /* Instrumentation */ = {
+			isa = PBXGroup;
+			children = (
+				057707E30ECA568A00103B8A /* main.m */,
+			);
+			path = Instrumentation;
+			sourceTree = "<group>";
+		};
+		057708DD0ECA738000103B8A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0587F9BD0ECEBB8C0066A0BC /* Simple Queue */ = {
+			isa = PBXGroup;
+			children = (
+				057706C00ECA417500103B8A /* PLActorSimpleQueue.h */,
+				057706DA0ECA49AA00103B8A /* PLActorSimpleQueue.m */,
+				0577070D0ECA4E7400103B8A /* PLActorSimpleQueueTests.m */,
+				05770AD30ECE195600103B8A /* PLActorSimpleQueueInstrumentation.m */,
+			);
+			name = "Simple Queue";
+			sourceTree = "<group>";
+		};
+		0587F9BF0ECEBB9C0066A0BC /* Write Lock */ = {
+			isa = PBXGroup;
+			children = (
+				0587F9660ECEB6D10066A0BC /* PLActorWriteLockQueue.h */,
+				0587F9670ECEB6D10066A0BC /* PLActorWriteLockQueue.m */,
+				0587FC2D0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m */,
+				0587FC320ECFBC010066A0BC /* PLActorWriteLockQueueInstrumentation.m */,
+			);
+			name = "Write Lock";
+			sourceTree = "<group>";
+		};
+		08FB7794FE84155DC02AAC07 /* ActorKit */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				057708DD0ECA738000103B8A /* Components */,
+				05411BED0E47D960009E3C18 /* Resources */,
+				05411B0B0E47B361009E3C18 /* Linked Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = ActorKit;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				052C31340EE621940023E46D /* ActorKit.h */,
+				052C31500EE621EA0023E46D /* ActorKit.m */,
+				05411B120E47B3AA009E3C18 /* PLActorKit.m */,
+				05411AC10E47ACD2009E3C18 /* PLActorKit.h */,
+				056E46160E492ACD00F3319F /* PLActorKitTests.m */,
+				05411AC30E47AD01009E3C18 /* PLActorProcess.h */,
+				05257F340EA02A1800CEF58C /* PLActorMessage.h */,
+				05257F350EA02A1800CEF58C /* PLActorMessage.m */,
+				05257F3C0EA02A9200CEF58C /* PLActorMessageTests.m */,
+				05102EF90E986D7500CF6E6E /* RPC */,
+				05065BD70EB7210100DAFB9D /* Runloop */,
+				057706BF0ECA40EE00103B8A /* Core */,
+				057707230ECA535D00103B8A /* Instrumentation */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05411ACC0E47AD0B009E3C18 /* Tests-MacOSX.octest */,
+				057707BF0ECA55E600103B8A /* Profiler-iPhoneOS.app */,
+				057707CF0ECA562500103B8A /* Profiler-MacOSX.app */,
+				05389E820EE6111600F8AA6F /* ActorKit.framework */,
+				052C2E470EE6127E0023E46D /* libActorKit-iphoneos.a */,
+				052C2EFC0EE613E40023E46D /* libActorKit-iphonesimulator.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		052C2E430EE6127E0023E46D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C2EF80EE613E40023E46D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05389E7D0EE6111600F8AA6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C30AA0EE61EE80023E46D /* PLThreadedActorProcess.h in Headers */,
+				052C30AB0EE61EE90023E46D /* PLSimpleActorProcess.h in Headers */,
+				052C30AC0EE61EEA0023E46D /* PLRunloopRPCProxy.h in Headers */,
+				052C30AD0EE61EEC0023E46D /* PLActorWriteLockQueue.h in Headers */,
+				052C30AE0EE61EED0023E46D /* PLActorSimpleQueue.h in Headers */,
+				052C30AF0EE61EEE0023E46D /* PLActorQueue.h in Headers */,
+				052C30B00EE61EEE0023E46D /* PLActorProcess.h in Headers */,
+				052C30B10EE61EEF0023E46D /* PLActorObjC.h in Headers */,
+				052C30B20EE61EF20023E46D /* PLActorMessage.h in Headers */,
+				052C30B30EE61EF20023E46D /* PLActorLocalProcess.h in Headers */,
+				052C30B40EE61EF30023E46D /* PLActorKit.h in Headers */,
+				052C30C10EE61F790023E46D /* PLActorRPC.h in Headers */,
+				052C30C20EE61F7A0023E46D /* PLActorRPCProxy.h in Headers */,
+				052C31350EE621940023E46D /* ActorKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		052C2E460EE6127E0023E46D /* ActorKit-iPhoneOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C2EDA0EE613400023E46D /* Build configuration list for PBXNativeTarget "ActorKit-iPhoneOS" */;
+			buildPhases = (
+				052C2E430EE6127E0023E46D /* Headers */,
+				052C2E440EE6127E0023E46D /* Sources */,
+				052C2E450EE6127E0023E46D /* Frameworks */,
+				052C2E590EE612D40023E46D /* Create Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C2F3F0EE616640023E46D /* PBXTargetDependency */,
+			);
+			name = "ActorKit-iPhoneOS";
+			productName = "ActorKit-iPhoneOS";
+			productReference = 052C2E470EE6127E0023E46D /* libActorKit-iphoneos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		052C2EFB0EE613E40023E46D /* ActorKit-iPhoneSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052C2F180EE614120023E46D /* Build configuration list for PBXNativeTarget "ActorKit-iPhoneSimulator" */;
+			buildPhases = (
+				052C2EF80EE613E40023E46D /* Headers */,
+				052C2EF90EE613E40023E46D /* Sources */,
+				052C2EFA0EE613E40023E46D /* Frameworks */,
+				052C2F230EE6149F0023E46D /* Create Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C2F410EE616670023E46D /* PBXTargetDependency */,
+			);
+			name = "ActorKit-iPhoneSimulator";
+			productName = "ActorKit-iPhoneSimulator";
+			productReference = 052C2EFC0EE613E40023E46D /* libActorKit-iphonesimulator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		05389E810EE6111600F8AA6F /* ActorKit-MacOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05389E860EE6111700F8AA6F /* Build configuration list for PBXNativeTarget "ActorKit-MacOSX" */;
+			buildPhases = (
+				05389E7D0EE6111600F8AA6F /* Headers */,
+				05389E7E0EE6111600F8AA6F /* Resources */,
+				05389E7F0EE6111600F8AA6F /* Sources */,
+				05389E800EE6111600F8AA6F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActorKit-MacOSX";
+			productName = "ActorKit-MacOSX";
+			productReference = 05389E820EE6111600F8AA6F /* ActorKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05411ACB0E47AD0B009E3C18 /* Tests-MacOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05411AD10E47AD0C009E3C18 /* Build configuration list for PBXNativeTarget "Tests-MacOSX" */;
+			buildPhases = (
+				05411AC70E47AD0B009E3C18 /* Resources */,
+				052C30020EE61D030023E46D /* Copy Frameworks */,
+				05411AC80E47AD0B009E3C18 /* Sources */,
+				05411AC90E47AD0B009E3C18 /* Frameworks */,
+				05411ACA0E47AD0B009E3C18 /* Run Tests */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C2EDC0EE613420023E46D /* PBXTargetDependency */,
+			);
+			name = "Tests-MacOSX";
+			productName = Tests;
+			productReference = 05411ACC0E47AD0B009E3C18 /* Tests-MacOSX.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		057707BE0ECA55E600103B8A /* Profiler-iPhoneOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057707C40ECA55E700103B8A /* Build configuration list for PBXNativeTarget "Profiler-iPhoneOS" */;
+			buildPhases = (
+				057707BB0ECA55E600103B8A /* Resources */,
+				057707BC0ECA55E600103B8A /* Sources */,
+				057707BD0ECA55E600103B8A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C2F500EE616E60023E46D /* PBXTargetDependency */,
+				052C2F4E0EE616E60023E46D /* PBXTargetDependency */,
+			);
+			name = "Profiler-iPhoneOS";
+			productName = iPhoneProfiler;
+			productReference = 057707BF0ECA55E600103B8A /* Profiler-iPhoneOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		057707CE0ECA562500103B8A /* Profiler-MacOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 057707D40ECA562600103B8A /* Build configuration list for PBXNativeTarget "Profiler-MacOSX" */;
+			buildPhases = (
+				057707CB0ECA562500103B8A /* Resources */,
+				052C30370EE61DB90023E46D /* Copy Frameworks */,
+				057707CC0ECA562500103B8A /* Sources */,
+				057707CD0ECA562500103B8A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				052C30290EE61D930023E46D /* PBXTargetDependency */,
+			);
+			name = "Profiler-MacOSX";
+			productName = MacOSProfiler;
+			productReference = 057707CF0ECA562500103B8A /* Profiler-MacOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "ActorKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ActorKit */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				052C2F190EE6148B0023E46D /* ActorKit */,
+				05389E810EE6111600F8AA6F /* ActorKit-MacOSX */,
+				052C2E460EE6127E0023E46D /* ActorKit-iPhoneOS */,
+				052C2EFB0EE613E40023E46D /* ActorKit-iPhoneSimulator */,
+				05411ACB0E47AD0B009E3C18 /* Tests-MacOSX */,
+				057707BE0ECA55E600103B8A /* Profiler-iPhoneOS */,
+				057707CE0ECA562500103B8A /* Profiler-MacOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05389E7E0EE6111600F8AA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05411AC70E47AD0B009E3C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057707BB0ECA55E600103B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057707CB0ECA562500103B8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052C2E590EE612D40023E46D /* Create Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy in the canonical framework\ntar -C \"${BUILD_DIR}/${CONFIGURATION}-${PL_CANONICAL_PLATFORM}\" -cf - \"${PL_CANONICAL_PRODUCT}.framework\" | tar -C \"${BUILT_PRODUCTS_DIR}\" -xf -\n\n# Copy in the static library we'll be using to replace the canonical framework's dylib\ncp \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PL_CANONICAL_PRODUCT}.framework/Versions/Current/${PL_CANONICAL_PRODUCT}\"";
+		};
+		052C2F230EE6149F0023E46D /* Create Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy in the canonical framework\ntar -C \"${BUILD_DIR}/${CONFIGURATION}-${PL_CANONICAL_PLATFORM}\" -cf - \"${PL_CANONICAL_PRODUCT}.framework\" | tar -C \"${BUILT_PRODUCTS_DIR}\" -xf -\n\n# Copy in the static library we'll be using to replace the canonical framework's dylib\ncp \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PL_CANONICAL_PRODUCT}.framework/Versions/Current/${PL_CANONICAL_PRODUCT}\"";
+		};
+		05411ACA0E47AD0B009E3C18 /* Run Tests */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Tests";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		052C2E440EE6127E0023E46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C2E4A0EE6128B0023E46D /* PLActorKit.m in Sources */,
+				052C2E4B0EE6128B0023E46D /* PLThreadedActorProcess.m in Sources */,
+				052C2E4C0EE6128B0023E46D /* PLSimpleActorProcess.m in Sources */,
+				052C2E4D0EE6128B0023E46D /* PLActorRPC.m in Sources */,
+				052C2E4E0EE6128B0023E46D /* PLActorRPCProxy.m in Sources */,
+				052C2E4F0EE6128B0023E46D /* PLActorMessage.m in Sources */,
+				052C2E500EE6128B0023E46D /* PLRunloopRPCProxy.m in Sources */,
+				052C2E510EE6128B0023E46D /* PLActorSimpleQueue.m in Sources */,
+				052C2E570EE6128B0023E46D /* PLActorWriteLockQueue.m in Sources */,
+				052C31520EE621EA0023E46D /* ActorKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052C2EF90EE613E40023E46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C2EFF0EE6140C0023E46D /* PLActorKit.m in Sources */,
+				052C2F000EE6140C0023E46D /* PLActorMessage.m in Sources */,
+				052C2F010EE6140C0023E46D /* PLActorRPC.m in Sources */,
+				052C2F020EE6140C0023E46D /* PLActorRPCProxy.m in Sources */,
+				052C2F030EE6140C0023E46D /* PLActorSimpleQueue.m in Sources */,
+				052C2F040EE6140C0023E46D /* PLActorWriteLockQueue.m in Sources */,
+				052C2F0A0EE6140C0023E46D /* PLRunloopRPCProxy.m in Sources */,
+				052C2F0B0EE6140C0023E46D /* PLSimpleActorProcess.m in Sources */,
+				052C2F0C0EE6140C0023E46D /* PLThreadedActorProcess.m in Sources */,
+				052C31530EE621EA0023E46D /* ActorKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05389E7F0EE6111600F8AA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05389E870EE6113300F8AA6F /* PLActorKit.m in Sources */,
+				05389E880EE6113300F8AA6F /* PLThreadedActorProcess.m in Sources */,
+				05389E890EE6113300F8AA6F /* PLSimpleActorProcess.m in Sources */,
+				05389E8A0EE6113300F8AA6F /* PLActorRPC.m in Sources */,
+				05389E8B0EE6113300F8AA6F /* PLActorRPCProxy.m in Sources */,
+				05389E8C0EE6113300F8AA6F /* PLActorMessage.m in Sources */,
+				05389E8D0EE6113300F8AA6F /* PLRunloopRPCProxy.m in Sources */,
+				05389E8E0EE6113300F8AA6F /* PLActorSimpleQueue.m in Sources */,
+				05389E940EE6113300F8AA6F /* PLActorWriteLockQueue.m in Sources */,
+				052C31510EE621EA0023E46D /* ActorKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05411AC80E47AD0B009E3C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056E46170E492ACD00F3319F /* PLActorKitTests.m in Sources */,
+				052B56590E5210D9008638FF /* PLThreadedActorProcessTests.m in Sources */,
+				052B56890E522303008638FF /* PLSimpleActorProcessTests.m in Sources */,
+				05102EFF0E986DF100CF6E6E /* PLActorRPCTests.m in Sources */,
+				0520FCE30EA003B6000B1751 /* PLActorRPCProxyTests.m in Sources */,
+				05257F3D0EA02A9200CEF58C /* PLActorMessageTests.m in Sources */,
+				05065BAF0EB713C000DAFB9D /* PLRunloopRPCProxyTests.m in Sources */,
+				0577070E0ECA4E7400103B8A /* PLActorSimpleQueueTests.m in Sources */,
+				0587F9B30ECEB9390066A0BC /* PLActorQueueTests.m in Sources */,
+				0587FC2E0ECFBB5B0066A0BC /* PLActorWriteLockQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057707BC0ECA55E600103B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C2F2A0EE615020023E46D /* PLActorSimpleQueueInstrumentation.m in Sources */,
+				052C2F2B0EE615020023E46D /* PLActorQueueInstruments.m in Sources */,
+				052C2F2C0EE615020023E46D /* PLActorWriteLockQueueInstrumentation.m in Sources */,
+				0577080C0ECA57E200103B8A /* main.m in Sources */,
+				055DE14E0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		057707CC0ECA562500103B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052C2F2D0EE6150A0023E46D /* PLActorSimpleQueueInstrumentation.m in Sources */,
+				052C2F2E0EE6150A0023E46D /* PLActorQueueInstruments.m in Sources */,
+				052C2F2F0EE6150A0023E46D /* PLActorWriteLockQueueInstrumentation.m in Sources */,
+				057708070ECA57D100103B8A /* main.m in Sources */,
+				055DE14D0FB4D24400901A92 /* PLActorRPCProxyInstrumentation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		052C2EDC0EE613420023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05389E810EE6111600F8AA6F /* ActorKit-MacOSX */;
+			targetProxy = 052C2EDB0EE613420023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F1D0EE614950023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C2EFB0EE613E40023E46D /* ActorKit-iPhoneSimulator */;
+			targetProxy = 052C2F1C0EE614950023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F1F0EE614950023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C2E460EE6127E0023E46D /* ActorKit-iPhoneOS */;
+			targetProxy = 052C2F1E0EE614950023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F210EE614950023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05389E810EE6111600F8AA6F /* ActorKit-MacOSX */;
+			targetProxy = 052C2F200EE614950023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F3F0EE616640023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05389E810EE6111600F8AA6F /* ActorKit-MacOSX */;
+			targetProxy = 052C2F3E0EE616640023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F410EE616670023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05389E810EE6111600F8AA6F /* ActorKit-MacOSX */;
+			targetProxy = 052C2F400EE616670023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F4E0EE616E60023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C2EFB0EE613E40023E46D /* ActorKit-iPhoneSimulator */;
+			targetProxy = 052C2F4D0EE616E60023E46D /* PBXContainerItemProxy */;
+		};
+		052C2F500EE616E60023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052C2E460EE6127E0023E46D /* ActorKit-iPhoneOS */;
+			targetProxy = 052C2F4F0EE616E60023E46D /* PBXContainerItemProxy */;
+		};
+		052C2FD30EE61C230023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05411ACB0E47AD0B009E3C18 /* Tests-MacOSX */;
+			targetProxy = 052C2FD20EE61C230023E46D /* PBXContainerItemProxy */;
+		};
+		052C30290EE61D930023E46D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05389E810EE6111600F8AA6F /* ActorKit-MacOSX */;
+			targetProxy = 052C30280EE61D930023E46D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		052C2E480EE6127F0023E46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "ActorKit$(EFFECTIVE_PLATFORM_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		052C2E490EE6127F0023E46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "ActorKit$(EFFECTIVE_PLATFORM_NAME)";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		052C2EFD0EE613E40023E46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "ActorKit$(EFFECTIVE_PLATFORM_NAME)";
+				SDKROOT = iphonesimulator;
+			};
+			name = Debug;
+		};
+		052C2EFE0EE613E40023E46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "ActorKit$(EFFECTIVE_PLATFORM_NAME)";
+				SDKROOT = iphonesimulator;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		052C2F1A0EE6148B0023E46D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = ActorKit;
+			};
+			name = Debug;
+		};
+		052C2F1B0EE6148B0023E46D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = ActorKit;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		05389E840EE6111700F8AA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Resources/ActorKit-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ActorKit;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		05389E850EE6111700F8AA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Resources/ActorKit-Info.plist";
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PRODUCT_NAME = ActorKit;
+				SDKROOT = macosx;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		05411ACF0E47AD0C009E3C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Resources/Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "-DACTOR_PRIVATE_API";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "Tests-MacOSX";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		05411AD00E47AD0C009E3C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Resources/Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "-DACTOR_PRIVATE_API";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "Tests-MacOSX";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		057707C20ECA55E700103B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Resources/Profiler-iPhoneOS-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-L\"${CONFIGURATION_BUILD_DIR}\"",
+					"-l\"ActorKit${EFFECTIVE_PLATFORM_NAME}\"",
+				);
+				PRODUCT_NAME = "Profiler-iPhoneOS";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		057707C30ECA55E700103B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "Resources/Profiler-iPhoneOS-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-L\"${CONFIGURATION_BUILD_DIR}\"",
+					"-l\"ActorKit${EFFECTIVE_PLATFORM_NAME}\"",
+				);
+				PRODUCT_NAME = "Profiler-iPhoneOS";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		057707D20ECA562600103B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Resources/Profiler-MacOSX-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "Profiler-MacOSX";
+			};
+			name = Debug;
+		};
+		057707D30ECA562600103B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EFFECTIVE_PLATFORM_NAME = "-MacOSX";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Components/PLInstrument-20081231-snap/PLInstrument-iPhone\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Resources/Profiler-MacOSX-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "Profiler-MacOSX";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB91F008733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DACTOR_PRIVATE_API=1";
+				PL_CANONICAL_PLATFORM = MacOSX;
+				PL_CANONICAL_PRODUCT = ActorKit;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Werror",
+				);
+			};
+			name = Debug;
+		};
+		1DEB91F108733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DACTOR_PRIVATE_API=1";
+				PL_CANONICAL_PLATFORM = MacOSX;
+				PL_CANONICAL_PRODUCT = ActorKit;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Werror",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		052C2EDA0EE613400023E46D /* Build configuration list for PBXNativeTarget "ActorKit-iPhoneOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C2E480EE6127F0023E46D /* Debug */,
+				052C2E490EE6127F0023E46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C2F180EE614120023E46D /* Build configuration list for PBXNativeTarget "ActorKit-iPhoneSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C2EFD0EE613E40023E46D /* Debug */,
+				052C2EFE0EE613E40023E46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052C2F290EE614AD0023E46D /* Build configuration list for PBXAggregateTarget "ActorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C2F1A0EE6148B0023E46D /* Debug */,
+				052C2F1B0EE6148B0023E46D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05389E860EE6111700F8AA6F /* Build configuration list for PBXNativeTarget "ActorKit-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05389E840EE6111700F8AA6F /* Debug */,
+				05389E850EE6111700F8AA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05411AD10E47AD0C009E3C18 /* Build configuration list for PBXNativeTarget "Tests-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05411ACF0E47AD0C009E3C18 /* Debug */,
+				05411AD00E47AD0C009E3C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057707C40ECA55E700103B8A /* Build configuration list for PBXNativeTarget "Profiler-iPhoneOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057707C20ECA55E700103B8A /* Debug */,
+				057707C30ECA55E700103B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		057707D40ECA562600103B8A /* Build configuration list for PBXNativeTarget "Profiler-MacOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057707D20ECA562600103B8A /* Debug */,
+				057707D30ECA562600103B8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "ActorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91F008733DB70010E9CD /* Debug */,
+				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
