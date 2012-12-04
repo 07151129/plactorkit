@@ -25,6 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 #import "ActorKit.h"
+#import <objc/message.h>
 
 /**
  * @internal
@@ -73,7 +74,7 @@ static void *run_actor (void *arg) {
     [PLActorKit setThreadProcess: proc];
     
     /* Start the user's code */
-    objc_msgSend(proc->_target_obj, proc->_target_sel, proc->_target_arg);
+    ((void (*)(id, SEL, id)) &objc_msgSend)(proc->_target_obj, proc->_target_sel, proc->_target_arg);
     
     /* We retained ourself when spawning this thread.
      * Now that the actor has returned, release ourself. */

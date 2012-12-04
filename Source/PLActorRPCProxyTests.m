@@ -45,7 +45,7 @@
 
 - (void) testLeak {
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-    PLActorProxyTests *testActor = [[PLActorRPCProxy alloc] initWithTarget: self];
+    PLActorProxyTests *testActor = (PLActorProxyTests *) [[PLActorRPCProxy alloc] initWithTarget: self];
     
     NSString *result = [testActor echo: @"test"];
     STAssertTrue([@"test" isEqual: result], @"Actor did not echo request, returned %@", result);
@@ -59,7 +59,7 @@
 }
 
 - (void) testSynchronousMessaging {
-    PLActorProxyTests *testActor = [[PLActorRPCProxy alloc] initWithTarget: self];
+    PLActorProxyTests *testActor = (PLActorProxyTests *) [[PLActorRPCProxy alloc] initWithTarget: self];
 
     NSString *result = [testActor echo: @"test"];
     STAssertTrue([@"test" isEqual: result], @"Actor did not echo request, returned %@", result);
@@ -69,7 +69,7 @@
 
 
 - (void) testAsynchronousMessaging {
-    PLActorProxyTests *testActor = [[PLActorRPCProxy alloc] initWithTarget: self];
+    PLActorProxyTests *testActor = (PLActorProxyTests *) [[PLActorRPCProxy alloc] initWithTarget: self];
     
     /* Send the async message */
     [testActor onewayEcho: @"test" sender: [PLActorKit process]];
